@@ -1,16 +1,130 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-  <head>
-    <title>Hula's Hawaiian BBQ</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <div>Hula's Hawaiian BBQ</div>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hula's Hawaiian Grill</title>
+
+  <!-- Bootstrap -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/taengoo-theme.min.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="container">
+        <div class="site-header">
+          <div class="row">
+            <div class="col-xs-8 col-sm-12">
+              <h1 class="site-logo"><span class="sr-only">Hula's Hawaiian Grill</span><a href="#"><img id="siteLogo1" src="img/hulas-logo-1.png" alt="Hula's Logo"><img id="siteLogo2" src="img/hulas-logo-2.png" alt="Hula's Logo"></a></h1>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="tang-nav-toggle" data-toggle="collapse" data-target="#siteNav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <nav>
+      <div class="container">
+        <div class="tang-navbar">
+          <div class="collapse" id="siteNav">
+            <ul class="tang-nav-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Catering</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section>
+      <div class="container">
+        <div class="box-home-slider">
+          <div id="homeSlider">
+            <div class="slider"><img src="img/hulas-hawaiian-bbq.png" alt="Hula's Hawaiian BBQ"></div>
+            <div class="slider"><img src="img/hulas-fresh-poke.png" alt="Hula's Fresh Poke"></div>
+            <div class="slider"><img src="img/hulas-shaved-ice.png" alt="Hula's Shaved Ice"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3 class="section-heading text-center">Specials</h3>
+            <div class="info-box">
+              <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque.</p>
+              <p class="text-center"><a href="#" class="btn btn-default">View Menu</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="section-heading text-center">Lunch</h3>
+            <div class="info-box">
+              <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque.</p>
+              <p class="text-center"><a href="#" class="btn btn-default">View Menu</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="section-heading text-center">Dinner</h3>
+            <div class="info-box">
+              <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque.</p>
+              <p class="text-center"><a href="#" class="btn btn-default">View Menu</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer id="footer">
+      <div class="container">
+        <p class="text-center">&copy; 2014 Hula's Hawaiian Grill</p>
+      </div>
+    </footer>
+    
+  </div>
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#homeSlider').bxSlider({
+        mode: 'fade',
+        speed: 1500,
+        pause: 5000,
+        auto: true,
+        pager: false,
+        controls: false
+      });
+    });
+  </script>
+</body>
 </html>
